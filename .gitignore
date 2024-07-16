@@ -1,7 +1,8 @@
 .DS_Store
 *.xlsx
 Seismic
-*.py
+cookie.py
 *.pyc
 *.xls
 *.csv
+*.ipynb
