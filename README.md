@@ -1,5 +1,4 @@
-# PEMS SCRAPPER: This is a tool to scrape PEMS data and analyze it.
+# Transportation Induced Demand Research
 
-- [ ] Hello 
-
+Analyzing factors of induced demand via data sources from Caltrans PeMS, [Caltrans Public Road Data (PRD)] (https://dot.ca.gov/programs/research-innovation-system-information/highway-performance-monitoring-system), historical editions of Caltrans "Assembly of statistical reports" from 1978-2000, and many other county-level demographic metrics.
 
