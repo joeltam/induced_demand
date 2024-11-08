@@ -1,4 +1,5 @@
 .DS_Store
+.vscode
 *.xlsx
 *.pyc
 *.xls
@@ -7,6 +8,7 @@
 cookie.py
 D7 Detector Health.png
 personal_income
-.vscode
 
 !caltrans_county.ipynb
+!requirements.txt
+!functional.ipynb

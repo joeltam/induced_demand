@@ -1,3 +1,4 @@
+# %% 
 import pandas as pd
 import statsmodels.formula.api as smf
 import numpy as np
@@ -14,20 +15,24 @@ ca['Log Per Capita Income'] = np.log(ca['Per Capita Income'])
 ca['Log Total Personal Income'] = np.log(ca['Total Personal Income'])
 ca['Log Unemployment Rate'] = np.log(ca['Unemployment Rate'])
 
+# %% 
 ca = ca[ca['Year'] >= 1963]
 # ca = ca[ca['Year'] >= 1976]
 ## Cervero Hansen Timeframe
 # ca = ca[(ca['Year'] >= 1976) & (ca['Year'] <= 1997)]
 ca.columns = ca.columns.str.replace(' ', '_')
 
+# %% 
 plt.plot(ca['Year'], ca['State_Highway_Lane_Miles'], label = 'Lane Miles')
 plt.plot(ca['Year'], ca['State_Highway_Maintained_Miles'], label = 'Maintained Miles')
 plt.legend()
 plt.show()
 
-# Additional Features
-ca['Poly'] = np.log(ca['State_Highway_Lane_Miles']**2)
-ca['Interaction'] = ca['Log_Population'] * ca['Log_State_Highway_Lane_Miles']
+# %% 
+
+# # Additional Features
+# ca['Poly'] = np.log(ca['State_Highway_Lane_Miles']**2)
+# ca['Interaction'] = ca['Log_Population'] * ca['Log_State_Highway_Lane_Miles']
 
 # Data for Linear Regression
 X = ca[['Log_Population', 'Log_State_Highway_Lane_Miles', 'Log_Per_Capita_Income']]

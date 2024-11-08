@@ -1,3 +1,4 @@
+# %%
 import pandas as pd
 import numpy as np
 import re
@@ -15,7 +16,7 @@ import os
 
 # CA_PRD.reset_index(drop=True, inplace=True)
 # CA_PRD.head()
-
+# %% 
 # Function to read highway miles data from Table 5
 CA_PRD = pd.DataFrame()
 for year in range(2001, 2023):
@@ -29,7 +30,7 @@ for year in range(2001, 2023):
     # print(f'{year} successful')
 
 CA_PRD.reset_index(drop=True, inplace=True)
-
+# %%
 # Uses Table 5
 def hwymiles(county):
     TAB5_PRD = pd.DataFrame()
@@ -80,7 +81,7 @@ def VMT(county):
     TAB6_PRD.loc[(TAB6_PRD['Year'] == 2009), 'Total DVMT'] = value_2009
 
     return TAB6_PRD
-
+# %%
 county_list = [
     "ALAMEDA", "ALPINE", "AMADOR", "BUTTE", "CALAVERAS", "COLUSA", "CONTRA COSTA",
     "DEL NORTE", "EL DORADO", "FRESNO", "GLENN", "HUMBOLDT", "IMPERIAL", "INYO", "KERN",
@@ -155,3 +156,4 @@ county['Highway % Change'] = hwy_miles_change
 county['City Roads % Change'] = city_miles_change
 county['2022 Highway Miles'] = hwy_miles
 county['2022 City Miles'] = city_miles
+# %%
