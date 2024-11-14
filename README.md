@@ -8,5 +8,6 @@ Analyzing factors of induced demand via data sources from Caltrans PeMS, [Caltra
 
 For the [Caltrans Public Road Data (PRD)](https://dot.ca.gov/programs/research-innovation-system-information/highway-performance-monitoring-system) have information of traffic data for the years 2000 to 2022. 
 
-
-
+Challenges:
+- There is no clear way to find expansion of lane miles in public roads that date back historically, especially on the county level.
+<!-- - Are lane miles the driver of the increase of VMT? During the economic surge between the 50s to the 90s, the population and average income increased alongside VMT.  -->
